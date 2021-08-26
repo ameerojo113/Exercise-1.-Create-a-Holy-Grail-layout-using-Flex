@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        text-align: center;
+    }
+
+    header,
+    footer {
+        background-color: yellowgreen;
+        height: 20vh;
+    }
+
+    header,
+    footer,
+    aside,
+    nav,
+    article {
+        padding: 30px;
+    }
+
+    .container {
+        display: flex;
+        height: 60vh;
+    }
+
+    .container>nav,
+    .container>aside {
+        background-color: beige;
+        flex: 1;
+    }
+
+    .container>nav {
+        order: 2;
+        background-color: #d7e804;
+    }
+
+    .container>article {
+        flex: 3;
+    }
+
+    @media screen and (max-width:675px) {
+        .container {
+            flex-direction: column;
+        }
+    }
+</style>
+
+<body>
+    <header>Header</header>
+
+    <div class="container">
+        <nav>Navigation</nav>
+        <Article>Article</Article>
+        <Aside>Aside</Aside>
+    </div>
+
+    <footer>Footer</footer>
+</body>
+
+</html>
